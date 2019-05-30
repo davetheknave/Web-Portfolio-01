@@ -11,7 +11,7 @@ class Site extends Page {
                 <li><a href="https://reactjs.org/">React</a></li>
             </ul>
             <h2>Source Code</h2>
-            <p>Get it <a href="https://github.com">here.</a></p>
+            <p>Get it <a href="https://github.com/davetheknave/Website">here.</a></p>
             <h2>Privacy Policy</h2>
             <p>I don't spy on you.</p>
             </div>);

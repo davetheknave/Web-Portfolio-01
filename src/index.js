@@ -36,16 +36,16 @@ class Navigation extends React.Component {
     render (){
         return (
             <div>
-                {this.button("Home", "home")}
-                {this.button("About", "about")}
-                {this.button("Work", "work")}
-                {this.button("Resume", "resume")}
-                {this.button("About this site", "site")}
+                {this.button("Home", "home", "charmT")}
+                {this.button("About", "about", "charmL1")}
+                {this.button("Work", "work", "charmR1")}
+                {this.button("Resume", "resume", "charmL2")}
+                {this.button("About this site", "site", "charmR2")}
             </div>
         );
     }
-    button(label, pageID){
-        return (<Button label={label} onClick={() => this.state.navigate(pageID)} />);
+    button(label, pageID, charm){
+        return (<div id={charm} class="charm"><Button label={label} onClick={() => this.state.navigate(pageID)}/></div>);
     }
 }
 
@@ -66,9 +66,9 @@ class Star extends React.Component {
         //alert(this.getText("hi"));
         
         return (
-        <div>
+        <div id="star">
             <Navigation navigate={(location) => this.changeView(location)}/>
-            <Window contents={this.state.location}/>
+            <div id="window"><Window contents={this.state.location}/></div>
         </div>
         );
     }

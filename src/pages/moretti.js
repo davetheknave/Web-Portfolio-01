@@ -31,7 +31,7 @@ class Moretti extends Page {
             <div>
                 <h1>Project Moretti</h1>
                 <p>Top Secret</p>
-                <Gallery />
+
             </div>);
     }
 }

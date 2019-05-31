@@ -28,7 +28,7 @@ class Navigation extends React.Component {
     }
     render (){
         return (
-            <div>
+            <div id="navigation">
                 {this.button("Home", "home", "charmT")}
                 {this.button("About", "about", "charmL1")}
                 {this.button("Work", "work", "charmR1")}

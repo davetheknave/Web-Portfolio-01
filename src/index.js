@@ -51,7 +51,7 @@ class Star extends React.Component {
 }
 
 const element = (
-    <div>
+    <div id="page">
         <Star />
     </div>
 );

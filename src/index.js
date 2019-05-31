@@ -18,7 +18,7 @@ export const PageContext = React.createContext();
 class CurrentPage extends React.Component {
     constructor(props){
         super(props);
-        this.state = {page: "home"};
+        this.state = {page: "moretti"};
     }
     goto = (pageID) => {
         return this.setState({page: pageID});

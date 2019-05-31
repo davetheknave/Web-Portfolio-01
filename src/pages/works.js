@@ -11,9 +11,7 @@ function PageLink(props){
     return (
         <PageContext.Consumer>
             {(context) => (
-                <>
-            <button onClick={() => {context.goto(props.destination)}} >{props.label}</button>
-            </>
+                <button className="pageLink" onClick={() => {context.goto(props.destination)}} >{props.label}</button>
             )}
         </PageContext.Consumer>
         );

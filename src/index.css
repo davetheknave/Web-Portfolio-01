@@ -1,8 +1,13 @@
+:root {
+  --background: #111;
+  --text: #ddd;
+  --accent: #c00;
+}
 body {
   font-family: "Patua One", cursive;
   text-align: center;
-  background-color: #111;
-  color: #ddd;
+  background-color: var(--background);
+  color: var(--text);
 }
 h1 {
   font-size: 35px;
@@ -22,10 +27,17 @@ ul {
   margin: 0;
 }
 a {
-  color: #c00;
+  color: var(--accent);
   text-decoration: inherit;
   font-size: 20px;
   padding: 0;
+}
+.pageLink {
+  border: none;
+  color: var(--accent);
+  background-color: var(--background);
+  cursor: pointer;
+  font: inherit;
 }
 #window {
   width: 100%;

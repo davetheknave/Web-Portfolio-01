@@ -8,7 +8,8 @@ import Resume from './pages/resume';
 import Site from './pages/site';
 import Moretti from './pages/moretti';
 import Navigation from './navigation';
-import Window from './window';
+import Window from './window/window';
+import StarAnimation from './animations/star';
 
 const windowContents =
 {home: <Home/>, about: <About/>, work: <Works/>, site: <Site/>, resume: <Resume/>, moretti: <Moretti/>}
@@ -50,8 +51,19 @@ class Star extends React.Component {
     }
 }
 
+function IntroAnimation(props){
+    const animation = props.animation;
+    if(animation.completed){
+        return this.props.children;
+    }
+    else{
+        return animation;
+    }
+}
+
 const element = (
     <div id="page">
+        <StarAnimation/>
         <Star />
     </div>
 );

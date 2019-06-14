@@ -59,7 +59,9 @@ class Window extends React.Component {
                 <LineElementT id="topRight"/>
                 <CornerElement id="topRightCorner"/>
                 <LineElementV id="left"/>
-                <h1 id="center">Hi</h1>
+                <div id="center">
+                    {this.props.children}
+                </div>
                 <LineElementV id="right"/>
                 <CornerElement id="bottomLeftCorner"/>
                 <LineElementB id="bottomLeft"/>

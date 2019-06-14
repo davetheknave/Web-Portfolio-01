@@ -42,7 +42,10 @@ class Star extends React.Component {
                 <PageContext.Consumer>
                     {(context)=>(
                         <>
-                    <div id="window"><Window contents={windowContents[context.page.page]}/></div></>
+                    <div id="window">
+                        <Window>
+                            {windowContents[context.page.page]}
+                        </Window></div></>
                     )}
                 </PageContext.Consumer>
             </CurrentPage>

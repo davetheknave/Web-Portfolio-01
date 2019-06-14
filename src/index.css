@@ -4,16 +4,16 @@
   --accent: #c00;
 }
 html,body {
-  font-family: "Patua One", cursive;
+  font-family: "Lato", sans-serif;
   text-align: center;
   background-color: var(--background);
   color: var(--text);
 }
 h1 {
-  font-size: 35px;
+  font-size: 40px;
 }
 h2 {
-  font-size: 25px;
+  font-size: 30px;
 }
 h1, h2 {
   font-family: "Poiret One", cursive;

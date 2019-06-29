@@ -2,6 +2,7 @@ import React from 'react';
 import './index.css';
 import './index';
 import { PageContext } from './index';
+import {ReactComponent as ButtonI} from "./button.svg";
 
 class Button extends React.Component {
     constructor(props) {
@@ -9,9 +10,13 @@ class Button extends React.Component {
         this.state = {label: props.label, onClick : props.onClick};
     }
     render (){
+        const big = (label) => {if(label == "Privacy Policy") return "bigLabel"};
         return (
             <div>
-                <button onClick={this.state.onClick}>{this.state.label}</button>
+                <button className="navButton" onClick={this.state.onClick}>
+                    <ButtonI/>
+                    <span className="buttonLabel" id={big(this.state.label)}>{this.state.label}</span>
+                </button>
             </div>
         )
     }
@@ -28,11 +33,11 @@ class Navigation extends React.Component {
     render (){
         return (
             <div id="navigation">
-                {this.button("Home", "home", "charmT")}
-                {this.button("About", "about", "charmL1")}
+                {this.button("About", "home", "charmT")}
+                {this.button("Contact", "about", "charmL1")}
                 {this.button("Work", "work", "charmR1")}
                 {this.button("Resume", "resume", "charmL2")}
-                {this.button("About this site", "site", "charmR2")}
+                {this.button("Privacy Policy", "site", "charmR2")}
             </div>
         );
     }

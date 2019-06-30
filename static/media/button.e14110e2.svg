@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="29.732mm" height="29.197mm" version="1.1" viewBox="0 0 29.732 29.197" xmlns="http://www.w3.org/2000/svg">
+ <g transform="translate(-99.594 -84.956)">
+  <ellipse cx="114.46" cy="99.555" rx="14.366" ry="14.098" fill="none" stroke="#fff" stroke-linecap="round" style="paint-order:normal"/>
+  <flowRoot id="text" transform="matrix(.26458 0 0 .26458 .36058 1.3568)" fill="#000000" font-family="sans-serif" font-size="8px" letter-spacing="0px" word-spacing="0px" style="line-height:25px" xml:space="preserve"><flowRegion><rect x="393.96" y="360.86" width="80.307" height="27.274"/></flowRegion><flowPara fill="#ffffff" font-size="21.333px">ABOUT</flowPara></flowRoot>
+  <path d="m116.71 93.853a4.5 4.5 0 0 1-5.1425-0.44991 4.5 4.5 0 0 1-1.3361-4.9863 4.5 4.5 0 0 1 4.2286-2.9609" fill="none" stroke="#fff" stroke-linecap="round" style="paint-order:normal"/>
+  <path d="m110.56 106.9a4.5 4.5 0 0 1 5.4362-1.9786 4.5 4.5 0 0 1 2.8926 5.01 4.5 4.5 0 0 1-4.4316 3.7186" fill="none" stroke="#fff" stroke-linecap="round" style="paint-order:normal"/>
+ </g>
+</svg>

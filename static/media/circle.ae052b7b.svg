@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="26.953mm" height="17.306mm" version="1.1" viewBox="0 0 26.953 17.306" xmlns="http://www.w3.org/2000/svg" xmlnsCc="http://creativecommons.org/ns#" xmlnsDc="http://purl.org/dc/elements/1.1/" xmlnsRdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
- <g transform="matrix(.066146 0 0 .066146 7.1387 -.1656)">
-  <circle cx="95.816" cy="102.7" r="10" fill="#fff" style="paint-order:normal"/>
- </g>
- <path d="m7.128 6.6276h-13.305" fill="none" stroke="#fff" stroke-width=".5"/>
- <path d="m33.13 6.6276h-13.305" fill="none" stroke="#fff" stroke-width=".5"/>
-</svg>

@@ -1,6 +1,6 @@
 import React from 'react';
 import Page from './page';
-import { PageContext } from '..';
+import { PageContext } from '../index';
 
 function WorkEntry(props){
     return (<li><a href={props.link}>{props.name}</a></li>)

@@ -33,10 +33,10 @@ class Navigation extends React.Component {
     render (){
         return (
             <div id="navigation">
-                {this.button("About", "home", "charmT")}
-                {this.button("Contact", "about", "charmL1")}
-                {this.button("Work", "work", "charmR1")}
-                {this.button("Resume", "resume", "charmL2")}
+                {this.button("About", "about", "charmT")}
+                {this.button("Work", "work", "charmL1")}
+                {this.button("Resume", "resume", "charmR1")}
+                {this.button("Contact", "contact", "charmL2")}
                 {this.button("Privacy Policy", "site", "charmR2")}
             </div>
         );

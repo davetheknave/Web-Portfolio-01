@@ -8,18 +8,18 @@ import Resume from './pages/resume';
 import Site from './pages/site';
 import Moretti from './pages/moretti';
 import Navigation from './navigation';
+import Contact from './pages/contact';
 import Window from './window/window';
-import StarAnimation from './animations/star';
 
 const windowContents =
-{home: <Home/>, about: <About/>, work: <Works/>, site: <Site/>, resume: <Resume/>, moretti: <Moretti/>}
+{home: <Home/>, about: <About/>, work: <Works/>, site: <Site/>, resume: <Resume/>, moretti: <Moretti/>, contact: <Contact/>}
 
 export const PageContext = React.createContext();
 
 class CurrentPage extends React.Component {
     constructor(props){
         super(props);
-        this.state = {page: "moretti"};
+        this.state = {page: "home"};
     }
     goto = (pageID) => {
         return this.setState({page: pageID});
@@ -36,39 +36,49 @@ class CurrentPage extends React.Component {
 class Star extends React.Component {
     render(){
         return (
-        <div id="star">
-            <CurrentPage>
-                    <Navigation />
-                <PageContext.Consumer>
-                    {(context)=>(
-                        <>
-                    <div id="window">
-                        <Window>
-                            {windowContents[context.page.page]}
-                        </Window></div></>
-                    )}
-                </PageContext.Consumer>
-            </CurrentPage>
-        </div>
+            <div id="star">
+                <Navigation />
+                <span id="starText"><h1>David Stearns</h1><p>Welcome to my website</p></span>
+            </div>
         );
     }
 }
+function Box(props) {
+    return (
+        <div id="box">
+            <div id="window">
+                <Window>
+                    {windowContents[props.page]}
+                </Window>
+            </div>
+        </div>
+    );
+}
 
-function IntroAnimation(props){
-    const animation = props.animation;
-    if(animation.completed){
-        return this.props.children;
+class Display extends React.Component {
+    render(){
+        return (
+            <div id="page">
+                <CurrentPage>
+                    <PageContext.Consumer>
+                        {context => this.getPage(context.page.page)}
+                    </PageContext.Consumer>
+                </CurrentPage>
+            </div>
+        )
     }
-    else{
-        return animation;
+    getPage(page){
+        if(page === "home"){
+            return (<Star/>);
+        }
+        else {
+            return (<Box page={page}/>);
+        }
     }
 }
 
 const element = (
-    <div id="page">
-        <StarAnimation/>
-        <Star />
-    </div>
+    <Display/>
 );
 ReactDOM.render(
     element,

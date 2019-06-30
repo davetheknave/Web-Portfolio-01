@@ -5,11 +5,14 @@ import {ReactComponent as LineV} from "./linev.svg";
 import {ReactComponent as LineT} from "./linet.svg";
 import {ReactComponent as LineB} from "./lineb.svg";
 import {ReactComponent as Corner} from "./corner.svg";
+import {PageContext} from "../index";
 
 function OrnamentElement(props){
     return (
         <div id={props.id}>
+            <button onClick={props.onClick} id="ornamentButton">
             <Ornament />
+            </button>
         </div>
     );
 }
@@ -55,7 +58,12 @@ class Window extends React.Component {
             <div className="frame">
                 <CornerElement id="topLeftCorner"/>
                 <LineElementT id="topLeft"/>
-                <OrnamentElement id="topCenter"/>
+                <PageContext.Consumer>
+                    {context => (
+                    <OrnamentElement id="topCenter" onClick={() => {context.goto("home")}}/>
+                    )
+                    }
+                </PageContext.Consumer>
                 <LineElementT id="topRight"/>
                 <CornerElement id="topRightCorner"/>
                 <LineElementV id="left"/>

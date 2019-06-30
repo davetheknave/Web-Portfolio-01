@@ -4,6 +4,7 @@ import Page from './page';
 class Site extends Page {
     render(){
         return (<div>
+            {/*
             <h1>About this website</h1>
             <h2>Tools used</h2>
             <ul>
@@ -13,7 +14,8 @@ class Site extends Page {
             </ul>
             <h2>Source Code</h2>
             <p>Get it <a href="https://github.com/davetheknave/Website">here.</a></p>
-            <h2>Privacy Policy</h2>
+            */}
+            <h1>Privacy Policy</h1>
             <p>I don't spy on you.</p>
             </div>);
     }

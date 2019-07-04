@@ -1,19 +1,11 @@
 import React from 'react';
 import Page from './page';
 import { PageContext } from '../index';
+import {PageLink} from './page';
 
+// Basically just a link
 function WorkEntry(props){
-    return (<li><a href={props.link}>{props.name}</a></li>)
-}
-
-function PageLink(props){
-    return (
-        <PageContext.Consumer>
-            {(context) => (
-                <button className="pageLink" onClick={() => {context.goto(props.destination)}} >{props.label}</button>
-            )}
-        </PageContext.Consumer>
-        );
+    return (<a href={props.link}>{props.name}</a>)
 }
 
 class Works extends Page {
@@ -21,9 +13,9 @@ class Works extends Page {
         return (<div>
             <h1>Interesting things I've created</h1>
             <ul>
-                <WorkEntry name="This website" link="https://github.com/davetheknave/Website" />
+                <li><WorkEntry name="This website" link="https://github.com/davetheknave/Website" /></li>
                 <li><PageLink label="Project Moretti" destination="moretti"/></li>
-                <WorkEntry name="D-Chess" link = "https://github.com/davetheknave/D-Chess" />
+                <li><WorkEntry name="D-Chess" link = "https://github.com/davetheknave/D-Chess" /></li>
             </ul>
             </div>);
     }

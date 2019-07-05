@@ -1,0 +1,30 @@
+Things that need to be added:
+    (MEDIUM) Carousel slideshows
+    (EASY) Scrolling
+    (HARD) Window resizing
+    Animations
+        Button Animations
+            (MEDIUM) Back button
+            (MEDIUM) Star buttons
+        (MEDIUM) Window resizing
+        (HARD) Intro star animation
+        (HARD) Window drawing
+    (MEDIUM) Window graphics alignment
+    Content
+        Website info
+            (EASY) Readme.md
+        D-Chess info
+            (EASY) Description
+            (MEDIUM) Screenshots
+        Moretti info
+            (EASY) Moretti description
+            (IMPOSSIBLE) Moretti screenshots
+        Content editing
+            (EASY) Resume
+            (EASY) Rewrite
+    (HARD) Fancy background
+Done:
+    Navigation
+    Graphics
+    Window
+    Content

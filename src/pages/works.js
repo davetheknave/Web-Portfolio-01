@@ -1,6 +1,5 @@
 import React from 'react';
 import Page from './page';
-import { PageContext } from '../index';
 import {PageLink} from './page';
 
 // Basically just a link

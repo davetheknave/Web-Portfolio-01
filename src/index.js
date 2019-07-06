@@ -25,7 +25,7 @@ export const PageContext = React.createContext();
 class CurrentPage extends React.Component {
     constructor(props){
         super(props);
-        this.state = {page: "home"};
+        this.state = {page: "moretti"};  // Starting page. Should be home.
     }
     gotoPage = (pageID) => {
         return this.setState({page: pageID});

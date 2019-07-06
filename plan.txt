@@ -1,7 +1,7 @@
-Things that need to be added:
+Things that need to be added (7):
     (MEDIUM) Carousel slideshows
-    (EASY) Scrolling
     (HARD) Window resizing
+    (EASY) Scrolling
     Animations
         Button Animations
             (MEDIUM) Back button
@@ -23,7 +23,7 @@ Things that need to be added:
             (EASY) Resume
             (EASY) Rewrite
     (HARD) Fancy background
-Done:
+Done (4):
     Navigation
     Graphics
     Window

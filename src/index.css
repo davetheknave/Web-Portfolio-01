@@ -376,7 +376,7 @@ svg {
 .dot {
   border-radius: 50%;
   background: #ddd;
-  position: fixed;
+  position: absolute;
 }
 
 /*# sourceMappingURL=index.css.map */

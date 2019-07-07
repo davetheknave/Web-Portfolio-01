@@ -19,7 +19,7 @@ export class Blob extends React.Component {
         };
     }
     componentDidMount(){
-        const leftOffset = 610;
+        const leftOffset = -30;
         const topOffset = -328;
         const scale = 0.68;
         const target = '.dot';

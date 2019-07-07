@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import Navigation from './navigation/navigation';
 import Window from './window/window';
+import {Blob as Star} from './animations/star/star';
 
 import About from './pages/about';
 import Works from './pages/works';
@@ -25,7 +26,7 @@ export const PageContext = React.createContext();
 class CurrentPage extends React.Component {
     constructor(props){
         super(props);
-        this.state = {page: "moretti"};  // Starting page. Should be home.
+        this.state = {page: "home"};  // Starting page. Should be home.
     }
     gotoPage = (pageID) => {
         return this.setState({page: pageID});
@@ -56,8 +57,10 @@ class Display extends React.Component {
         if(page === "home"){  // Show the navigation star
             return (
                 <div id="star">
-                    <Navigation/>
-                    <span id="starText"><h1>David Stearns</h1><p>Welcome to my website</p></span>
+                    <Star>
+                        <Navigation/>
+                        <span id="starText"><h1>David Stearns</h1><p>Welcome to my website</p></span>
+                    </Star>
                 </div>
             );
         }

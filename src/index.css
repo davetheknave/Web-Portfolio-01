@@ -141,8 +141,8 @@ svg {
 
 #charmT {
   position: absolute;
-  top: 0;
   left: 50%;
+  top: 0;
 }
 
 #window {
@@ -371,6 +371,12 @@ svg {
 
 .glide__slide {
   width: 25vw;
+}
+
+.dot {
+  border-radius: 50%;
+  background: #ddd;
+  position: fixed;
 }
 
 /*# sourceMappingURL=index.css.map */

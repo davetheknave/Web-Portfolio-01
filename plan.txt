@@ -1,5 +1,4 @@
-Things that need to be added (7):
-    (MEDIUM) Carousel slideshows
+Things that need to be added (6):
     (HARD) Window resizing
     (EASY) Scrolling
     Animations
@@ -7,7 +6,6 @@ Things that need to be added (7):
             (MEDIUM) Back button
             (MEDIUM) Star buttons
         (MEDIUM) Window resizing
-        (HARD) Intro star animation
         (HARD) Window drawing
     (MEDIUM) Window graphics alignment
     Content
@@ -23,8 +21,12 @@ Things that need to be added (7):
             (EASY) Resume
             (EASY) Rewrite
     (HARD) Fancy background
-Done (4):
+    Responsive
+Done (6):
     Navigation
     Graphics
     Window
     Content
+    Carousels
+    Animations
+        Star

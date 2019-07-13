@@ -25,22 +25,28 @@ function CornerElement(props){
 }
 function LineElementT(props){
     return (
-        <div id={props.id}>
-            <LineT />
+        <div id={props.id} className="framePiece">
+            <svg height="44px" className="windowObjectH" preserveAspectRatio="none">
+                <rect className="windowLine" x="0" y="40px" height="2px" width="100%" />
+            </svg> 
         </div>
     );
 }
 function LineElementB(props){
     return (
-        <div id={props.id}>
-            <LineB />
+        <div id={props.id} className="framePiece">
+            <svg height="44px" className="windowObjectH" preserveAspectRatio="none">
+                <rect className="windowLine" x="0" y="24px" height="2px" width="100%" />
+            </svg> 
         </div>
     );
 }
 function LineElementV(props){
     return (
         <div id={props.id} className="framePiece">
-            <LineV />
+            <svg className="windowObjectV" preserveAspectRatio="none">
+                <rect className="windowLine" x="0" y="0" height="100%" width="2px" />
+            </svg> 
         </div>
     );
 }

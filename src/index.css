@@ -154,9 +154,27 @@ svg {
 
 .framePiece {
   font-size: 0;
+  display: block;
+  margin: 0;
+  padding: 0;
 }
 
 /* This is for the svg elements around the window: */
+.windowLine {
+  stroke: #ddd;
+  fill: #fff;
+  stroke-width: 0px;
+}
+
+.windowObjectV {
+  height: 100%;
+  width: 2px;
+}
+
+.windowObjectH {
+  width: 100%;
+}
+
 #topLeftCorner {
   grid-column-start: 1;
   transform: scaleX(-1);
@@ -173,6 +191,7 @@ svg {
   background: none;
   border: none;
   padding: 0;
+  display: block;
 }
 
 #topRight {
@@ -193,6 +212,7 @@ svg {
   grid-column-end: span 3;
   justify-self: center;
   align-self: center;
+  padding: 1em;
 }
 
 #right {

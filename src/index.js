@@ -42,6 +42,10 @@ class CurrentPage extends React.Component {
 
 
 class Display extends React.Component {
+    constructor(props){
+        super(props);
+        this.state = {complete:false};
+    }
     render(){
         return (
             <div id="page">
@@ -57,7 +61,7 @@ class Display extends React.Component {
         if(page === "home"){  // Show the navigation star
             return (
                 <div id="star">
-                    <Star>
+                    <Star complete={this.state.complete} onDone={() => this.setState({complete:true})}>
                         <Navigation/>
                         <span id="starText"><h1>David Stearns</h1><p>Welcome to my website</p></span>
                     </Star>

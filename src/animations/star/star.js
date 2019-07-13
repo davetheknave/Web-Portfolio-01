@@ -15,7 +15,8 @@ export class Blob extends React.Component {
             blobNumber: 50,  // Number of dots in the blob. determines the length, along with delay
             delay: 1,  // Delay between dots moving in milliseconds. Basically how "stretched" the trail is
             duration: 200,
-            complete: false,
+            complete: props.complete,
+            onDone: props.onDone,
         };
     }
     componentDidMount(){
@@ -27,7 +28,7 @@ export class Blob extends React.Component {
             easing: 'easeInOutQuad',
             duration: this.state.duration,
             delay: anime.stagger(this.state.delay),
-            complete: (anim) => {this.setState({complete: true});}
+            complete: (anim) => {this.setState({complete: true}); this.state.onDone();}
         });
         anime.set(target, {translateX: leftOffset + 500 * scale, translateY: topOffset + 0 * scale})
         timeline.add({duration: 300});  // This is a delay

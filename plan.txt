@@ -1,12 +1,10 @@
-Things that need to be added (6):
-    (HARD) Window resizing
-    (EASY) Scrolling
+Things that need to be added:
     Animations
         Button Animations
             (MEDIUM) Back button
             (MEDIUM) Star buttons
-        (MEDIUM) Window resizing
-        (HARD) Window drawing
+        (HARD) Window resizing
+        (MEDIUM) Window drawing
     (MEDIUM) Window graphics alignment
     Content
         Website info
@@ -20,12 +18,16 @@ Things that need to be added (6):
         Content editing
             (EASY) Resume
             (EASY) Rewrite
-    (HARD) Fancy background
-    Responsive
-Done (6):
+    (EASY) Scrolling
+    Fancy stuff
+        (MEDIUM) Star graphic
+        (HARD) Fancy background
+    (MEDIUM) Responsiveness
+Done:
     Navigation
     Graphics
     Window
+        Resizing
     Content
     Carousels
     Animations

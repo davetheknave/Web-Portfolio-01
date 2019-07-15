@@ -8,7 +8,10 @@ class Moretti extends Page {
             <div>
                 <h1>Project Moretti</h1>
                 <p>Top Secret</p>
-                <Screenshots/>
+                <Screenshots>
+                    <li className="glide__slide">Screenshot 1</li>
+                    <li className="glide__slide">Screenshot 2</li>
+                </Screenshots>
             </div>);
     }
 }

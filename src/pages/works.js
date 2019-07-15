@@ -14,7 +14,7 @@ class Works extends Page {
             <ul>
                 <li><WorkEntry name="This website" link="https://github.com/davetheknave/Website" /></li>
                 <li><PageLink label="Project Moretti" destination="moretti"/></li>
-                <li><WorkEntry name="D-Chess" link = "https://github.com/davetheknave/D-Chess" /></li>
+                <li><PageLink label="D-Chess" destination="dchess"/></li>
             </ul>
             </div>);
     }

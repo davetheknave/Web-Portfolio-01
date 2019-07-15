@@ -11,6 +11,7 @@ import Resume from './pages/resume';
 import Site from './pages/site';
 import Moretti from './pages/moretti';
 import Contact from './pages/contact';
+import DChess from './pages/dchess';
 
 const pages = {
     about: <About/>,
@@ -18,7 +19,8 @@ const pages = {
     site: <Site/>,
     resume: <Resume/>,
     moretti: <Moretti/>,
-    contact: <Contact/>
+    contact: <Contact/>,
+    dchess: <DChess/>
 }
 
 // Keeps track of the current page
@@ -26,7 +28,7 @@ export const PageContext = React.createContext();
 class CurrentPage extends React.Component {
     constructor(props){
         super(props);
-        this.state = {page: "home"};  // Starting page. Should be home.
+        this.state = {page: "dchess"};  // Starting page. Should be home.
     }
     gotoPage = (pageID) => {
         return this.setState({page: pageID});

@@ -7,10 +7,7 @@ Things that need to be added:
         (MEDIUM) Window drawing
     (MEDIUM) Window graphics alignment
     Content
-        Website info
-            (EASY) Readme.md
         D-Chess info
-            (EASY) Description
             (MEDIUM) Screenshots
         Moretti info
             (EASY) Moretti description
@@ -23,12 +20,5 @@ Things that need to be added:
         (MEDIUM) Star graphic
         (HARD) Fancy background
     (MEDIUM) Responsiveness
-Done:
-    Navigation
-    Graphics
-    Window
-        Resizing
-    Content
-    Carousels
-    Animations
-        Star
+    Back button
+    Star resizing bug

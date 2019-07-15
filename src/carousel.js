@@ -17,9 +17,7 @@ class Screenshots extends React.Component {
             <div className="glide" ref={this.ref}>
                 <div data-glide-el="track" className="glide__track">
                     <ul className="glide__slides">
-                        <li className="glide__slide">Hi</li>
-                        <li className="glide__slide">Hello</li>
-                        <li className="glide__slide">Bye</li>
+                        {this.props.children}
                     </ul>
                 </div>
                 <div data-glide-el="controls">

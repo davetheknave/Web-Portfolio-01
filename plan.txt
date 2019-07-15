@@ -7,18 +7,15 @@ Things that need to be added:
         (MEDIUM) Window drawing
     (MEDIUM) Window graphics alignment
     Content
-        D-Chess info
-            (MEDIUM) Screenshots
         Moretti info
             (EASY) Moretti description
             (IMPOSSIBLE) Moretti screenshots
         Content editing
             (EASY) Resume
             (EASY) Rewrite
-    (EASY) Scrolling
     Fancy stuff
         (MEDIUM) Star graphic
         (HARD) Fancy background
-    (MEDIUM) Responsiveness
+    (HARD) Responsiveness
     Back button
     Star resizing bug

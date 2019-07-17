@@ -1,7 +1,8 @@
 import React from 'react';
 import '../index';
-import { PageContext } from '../index';
 import {ReactComponent as ButtonI} from "./button.svg";
+import { BrowserRouter as Router, Link } from 'react-router-dom'
+
 
 class Navigation extends React.Component {
     constructor(props){
@@ -13,15 +14,9 @@ class Navigation extends React.Component {
     }
     button(label, pageID, charm){
         return (
-            <PageContext.Consumer>
-                {(context) => (
-                    <>
                 <div id={charm} className="charm">
-                    <Button label={label} onClick={() => {context.goto(pageID)}}/>
+                    <Button label={label} to={pageID}/>
                 </div>
-                </>
-                )}
-            </PageContext.Consumer>
         );
     }
     render (){
@@ -41,10 +36,10 @@ function Button(props){
     const big = (label) => {if(label.length > 7) return "bigLabel"};  // This just shrinks the font size to fit larger labels. Still shouldn't exceed 20 chars or so.
     return (
         <div>
-            <button className="navButton" onClick={props.onClick}>
+            <Link className="navButton" to={'/' + props.to}>
                 <ButtonI/>
                 <span className="buttonLabel" id={big(props.label)}>{props.label}</span>
-            </button>
+            </Link>
         </div>
     );
 }

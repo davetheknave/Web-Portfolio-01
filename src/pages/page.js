@@ -1,14 +1,10 @@
 import React from 'react';
-import {PageContext} from '../index';
+import { BrowserRouter as Router, Link } from 'react-router-dom'
 
 // A link to another page on the same site
 export function PageLink(props){
     return (
-        <PageContext.Consumer>
-            {(context) => (
-                <button className="pageLink" onClick={() => {context.goto(props.destination)}} >{props.label}</button>
-            )}
-        </PageContext.Consumer>
+            <Link className="pageLink" to={"" + props.destination}>{props.label}</Link>
         );
 }
 

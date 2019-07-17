@@ -1,11 +1,15 @@
 Things that need to be added:
-    Animations
-        Button Animations
-            (MEDIUM) Back button
-            (MEDIUM) Star buttons
-        (HARD) Window resizing
-        (MEDIUM) Window drawing
-    (MEDIUM) Window graphics alignment
+    Visual
+        Animations
+            Button Animations
+                (MEDIUM) Back button
+                (MEDIUM) Star buttons
+            (HARD) Window resizing
+            (MEDIUM) Window drawing
+        (MEDIUM) Window graphics alignment
+        Fancy stuff
+            (MEDIUM) Star graphic
+            (HARD) Fancy background
     Content
         Moretti info
             (EASY) Moretti description
@@ -13,9 +17,6 @@ Things that need to be added:
         Content editing
             (EASY) Resume
             (EASY) Rewrite
-    Fancy stuff
-        (MEDIUM) Star graphic
-        (HARD) Fancy background
-    (HARD) Responsiveness
-    Back button
-    Star resizing bug
+    Function
+        (HARD) Responsiveness
+        (HARD) Accessibility

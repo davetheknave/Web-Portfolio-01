@@ -4,6 +4,8 @@ import './index.css';
 import Navigation from './navigation/navigation';
 import Window from './window/window';
 import {Blob as Star} from './animations/star/star';
+import { BrowserRouter as Router, Link, Route } from 'react-router-dom'
+
 
 import About from './pages/about';
 import Works from './pages/works';
@@ -23,24 +25,13 @@ const pages = {
     dchess: <DChess/>
 }
 
-// Keeps track of the current page
-export const PageContext = React.createContext();
-class CurrentPage extends React.Component {
-    constructor(props){
-        super(props);
-        this.state = {page: "dchess"};  // Starting page. Should be home.
-    }
-    gotoPage = (pageID) => {
-        return this.setState({page: pageID});
-    }
-    render(){
-        return(
-            <PageContext.Provider value={{page: this.state, goto: this.gotoPage}}>
-                {this.props.children}
-            </PageContext.Provider>
-        );
-    }
-}
+const W = ({match}) => (
+    <div id="window">
+        <Window>
+            {pages[match.params.id]}
+        </Window>
+    </div>
+)
 
 
 class Display extends React.Component {
@@ -51,38 +42,25 @@ class Display extends React.Component {
     render(){
         return (
             <div id="page">
-                <CurrentPage>
-                    <PageContext.Consumer>
-                        {context => this.getPage(context.page.page)}
-                    </PageContext.Consumer>
-                </CurrentPage>
+                <Route exact path="/" render={()=>(
+                    <div id="star">
+                        <Star complete={this.state.complete} onDone={() => this.setState({complete:true})}>
+                            <Navigation/>
+                            <span id="starText"><h1>David Stearns</h1><p>Welcome to my website</p></span>
+                        </Star>
+                    </div>
+
+                )} />
+                <Route path="/:id" component={W}/>
             </div>
         )
-    }
-    getPage(page){
-        if(page === "home"){  // Show the navigation star
-            return (
-                <div id="star">
-                    <Star complete={this.state.complete} onDone={() => this.setState({complete:true})}>
-                        <Navigation/>
-                        <span id="starText"><h1>David Stearns</h1><p>Welcome to my website</p></span>
-                    </Star>
-                </div>
-            );
-        }
-        else {  // show the current page
-            return (
-                <div id="window">
-                    <Window>
-                        {pages[page]}
-                    </Window>
-                </div>);
-        }
     }
 }
 
 const element = (
-    <Display/>
+    <Router>
+        <Display/>
+    </Router>
 );
 ReactDOM.render(
     element,

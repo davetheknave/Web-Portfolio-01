@@ -1,6 +1,5 @@
 Things that need to be added:
     Visual
-        (HARD) Fancy background
         (MEDIUM) Star graphic
         (MEDIUM) Window graphics alignment
         Animations

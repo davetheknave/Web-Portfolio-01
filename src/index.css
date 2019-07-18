@@ -46,7 +46,7 @@ a {
 .pageLink {
   border: none;
   color: #c00;
-  background-color: #111;
+  background-color: none;
   cursor: pointer;
   font: inherit;
 }
@@ -425,7 +425,7 @@ svg {
 }
 
 .spiroBG {
-  filter: blur(5px);
+  filter: blur(12px);
 }
 
 /*# sourceMappingURL=index.css.map */

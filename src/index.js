@@ -4,7 +4,8 @@ import './index.css';
 import Navigation from './navigation/navigation';
 import Window from './window/window';
 import {Blob as Star} from './animations/star/star';
-import { BrowserRouter as Router, Link, Route } from 'react-router-dom'
+import { BrowserRouter as Router, Link, Route } from 'react-router-dom';
+import SpiroBackground from './animations/spiro/spiro';
 
 
 import About from './pages/about';
@@ -33,7 +34,6 @@ const W = ({match}) => (
     </div>
 )
 
-
 class Display extends React.Component {
     constructor(props){
         super(props);
@@ -42,6 +42,7 @@ class Display extends React.Component {
     render(){
         return (
             <div id="page">
+                <SpiroBackground/>
                 <Route exact path="/" render={()=>(
                     <div id="star">
                         <Star complete={this.state.complete} onDone={() => this.setState({complete:true})}>

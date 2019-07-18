@@ -416,4 +416,16 @@ svg {
   position: absolute;
 }
 
+.spiro {
+  opacity: 0;
+  position: fixed;
+  filter: blur(0.1px);
+  left: 50vw;
+  top: 50vh;
+}
+
+.spiroBG {
+  filter: blur(5px);
+}
+
 /*# sourceMappingURL=index.css.map */

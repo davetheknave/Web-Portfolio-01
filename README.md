@@ -14,6 +14,8 @@ The image galleries were made with [Glide.js](https://glidejs.com).
 
 The animations were made with [Anime.js](https://animejs.com).
 
+I also used [React-Router](https://github.com/ReactTraining/react-router).
+
 ## Source code
 
 Switch to the ['Source' branch](https://github.com/davetheknave/davetheknave.github.io/tree/source) to see the source code.

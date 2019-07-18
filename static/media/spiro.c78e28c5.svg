@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="103.23mm" height="103.23mm" version="1.1" viewBox="0 0 103.23 103.23" xmlns="http://www.w3.org/2000/svg">
+ <g transform="translate(-48.383 -20.383)" fill="none" stroke="#fff" stroke-linecap="round">
+  <circle cx="75" cy="72" r="24.5" style="paint-order:normal"/>
+  <circle cx="82.342" cy="54.342" r="24.5" style="paint-order:normal"/>
+  <circle cx="117.66" cy="89.658" r="24.5" style="paint-order:normal"/>
+  <circle cx="117.66" cy="54.342" r="24.5" style="paint-order:normal"/>
+  <circle cx="82.342" cy="89.658" r="24.5" style="paint-order:normal"/>
+  <circle cx="100" cy="97" r="24.5" style="paint-order:normal"/>
+  <circle cx="100" cy="47" r="24.5" style="paint-order:normal"/>
+  <circle cx="125" cy="72" r="24.5" style="paint-order:normal"/>
+  <circle cx="100" cy="72" r="49.5" stroke-width="4.2333" style="paint-order:normal"/>
+ </g>
+</svg>

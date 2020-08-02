@@ -1,3 +1,8 @@
+# I am no longer using this.
+See [davetheknave.github.io](https://github.com/davetheknave/davetheknave.github.io)
+
+---------------------------
+
 # David Stearns' Personal Website
 
 ## About
@@ -18,6 +23,6 @@ I also used [React-Router](https://github.com/ReactTraining/react-router).
 
 ## Source code
 
-Switch to the ['Source' branch](https://github.com/davetheknave/davetheknave.github.io/tree/source) to see the source code.
+Switch to the ['Source' branch](https://github.com/davetheknave/davetheknave.github.io-old/tree/source) to see the source code.
 
-Switch to the ['Master' branch](https://github.com/davetheknave/davetheknave.github.io/tree/master) to see the built website.
+Switch to the ['Master' branch](https://github.com/davetheknave/davetheknave.github.io-old/tree/master) to see the built website.
